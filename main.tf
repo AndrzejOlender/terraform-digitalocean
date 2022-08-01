@@ -7,6 +7,7 @@ resource "digitalocean_kubernetes_cluster" "olender" {
   # 'doctl kubernetes options regions'
   region = "ams3"
   auto_upgrade = true
+  tags = ["k8s"]
   version = data.digitalocean_kubernetes_versions.olender.latest_version
 
   maintenance_policy {
