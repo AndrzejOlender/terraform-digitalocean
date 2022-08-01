@@ -1,0 +1,5 @@
+.vscode*
+.terraform
+terraform.tfstate.backup
+terraform.tfstate
+.DS_Store
