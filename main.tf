@@ -5,7 +5,7 @@ data "digitalocean_kubernetes_versions" "olender" {
 resource "digitalocean_kubernetes_cluster" "olender" {
   name   = "olender"
   # 'doctl kubernetes options regions'
-  region = "ams3"
+  region = "fra1"
   auto_upgrade = true
   tags = ["k8s"]
   version = data.digitalocean_kubernetes_versions.olender.latest_version
